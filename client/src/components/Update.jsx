@@ -8,7 +8,7 @@ const Update = () => {
   const [data, setData] = useState({});
 
   const fetchData = async () => {
-    await fetch(`/api/crud/${id}`)
+    await fetch(`https://mern-crud-5y9l.onrender.com/api/crud/${id}`)
       .then((res) => res.json())
       .then((res) => setData(res?.crud));
   };
@@ -23,7 +23,7 @@ const Update = () => {
 
   const updateData = async (e) => {
     e.preventDefault();
-    await fetch(`/api/crud/${id}`, {
+    await fetch(`https://mern-crud-5y9l.onrender.com/api/crud/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

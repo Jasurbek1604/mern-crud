@@ -10,7 +10,7 @@ const Add = () => {
 
   const addItem = async (e) => {
     e.preventDefault();
-    await fetch("/api/crud/add", {
+    await fetch("https://mern-crud-5y9l.onrender.com/api/crud/add", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

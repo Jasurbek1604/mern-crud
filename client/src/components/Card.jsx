@@ -5,7 +5,7 @@ const Card = () => {
   const [data, setData] = useState([]);
 
   const fetchData = () => {
-    fetch("/api/crud")
+    fetch("https://mern-crud-5y9l.onrender.com/api/crud")
       .then((res) => res.json())
       .then((res) => setData(res?.crud));
   };
@@ -17,7 +17,7 @@ const Card = () => {
   const navigate = useNavigate();
 
   const onDelete = async (id) => {
-    await fetch(`/api/crud/${id}`, {
+    await fetch(`https://mern-crud-5y9l.onrender.com/api/crud/${id}`, {
       method: "DELETE",
     });
     fetchData();
