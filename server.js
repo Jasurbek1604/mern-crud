@@ -16,3 +16,6 @@ app.use("/api/crud", require("./routes/crudRoutes.js"));
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, console.log(`Server has been run in ${PORT} port`));
+
+// "test": "node server.js",
+// "dev": "nodemon server.js"
