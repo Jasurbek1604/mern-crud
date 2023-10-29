@@ -17,7 +17,7 @@ const Card = () => {
   const navigate = useNavigate();
 
   const onDelete = async (id) => {
-    await fetch(`http://localhost:3000/api/crud/${id}`, {
+    await fetch(`/api/crud/${id}`, {
       method: "DELETE",
     });
     fetchData();
@@ -39,7 +39,7 @@ const Card = () => {
             </button>
             <button
               className="btn btn-primary mx-4 px-4"
-              onClick={() => navigate("/add")}
+              onClick={() => navigate(`/update/${_id}`)}
             >
               Update
             </button>

@@ -10,7 +10,7 @@ const Add = () => {
 
   const addItem = async (e) => {
     e.preventDefault();
-    await fetch("http://localhost:3000/api/crud/add", {
+    await fetch("/api/crud/add", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

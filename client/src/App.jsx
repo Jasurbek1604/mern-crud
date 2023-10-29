@@ -15,7 +15,7 @@ const App = () => {
             <Routes>
               <Route exact path="/" element={<Card />} />
               <Route path="/add" element={<Add />} />
-              <Route path="/update:id" element={<Update />} />
+              <Route path="/update/:id" element={<Update />} />
             </Routes>
           </div>
         </div>

@@ -5,7 +5,7 @@ const getAllData = async (req, res) => {
     const crud = await Crud.find();
     res.status(200).json({
       message: "success",
-      crud,
+      crud: crud.reverse(),
     });
   } catch (err) {
     res.send(err);
