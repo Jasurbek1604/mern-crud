@@ -5,7 +5,7 @@ const Card = () => {
   const [data, setData] = useState([]);
 
   const fetchData = () => {
-    fetch("http://localhost:3000/api/crud")
+    fetch("/api/crud")
       .then((res) => res.json())
       .then((res) => setData(res?.crud));
   };
